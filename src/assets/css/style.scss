@@ -1,0 +1,239 @@
+@import "./Breakpoint/breakpoint";
+
+// Custom Variable and Mixin
+@import "./Variables/Variable";
+
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+$white: #fff;
+$primary: #36115a;
+$second: #f57931;
+
+* :focus {
+  box-shadow: none !important;
+}
+input::placeholder {
+  color: $white !important;
+}
+
+body {
+  background: #121515;
+}
+* {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+.min-vh-75 {
+  min-height: 75vh !important;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 350px;
+  padding: 15px;
+  margin: auto;
+  height: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+// Footer css starts here
+.footer {
+  background: #101214;
+  /* Effect 3 */
+
+  box-shadow: -10px -10px 20px rgba(72, 80, 99, 0.26), 10px 10px 20px #262c37;
+  & .news-letter {
+    & h5 {
+      font-weight: normal;
+      font-size: 18px;
+      font-family: Rajdhani;
+      line-height: 21px;
+      letter-spacing: 0.1em;
+    }
+  }
+  button {
+    height: 43px;
+    margin-left: -3px;
+    font-family: Rajdhani;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+// Footer css ends here
+
+.view-record {
+  .image-container {
+    border-radius: 15px;
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+  .banner-text {
+    background: linear-gradient(
+        180deg,
+        rgba(12, 12, 12, 0) 16.3%,
+        rgba(0, 0, 0, 0.79937) 78.07%,
+        rgba(0, 0, 0, 0.799624) 82.95%,
+        rgba(0, 0, 0, 0.799645) 82.96%,
+        rgba(0, 0, 0, 0.8) 82.96%
+      ),
+      url(../images/mainbg.jpg);
+    justify-content: start;
+    @include media(">=phone", "<=425px") {
+      margin-bottom: -60px;
+    }
+  }
+  .record-tabs {
+    margin-top: -80px;
+    @include media(">=phone", "<=425px") {
+      margin-top: 0;
+    }
+    & .db-list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+.rec-modal {
+  & .modal-content {
+    background-color: $formBg;
+  }
+  & .modal-footer {
+    border: none;
+  }
+}
+.css-1s2u09g-control {
+  background-color: transparent !important;
+  border-color: #404142 !important;
+  color: $white;
+  box-shadow: none !important;
+}
+.css-1okebmr-indicatorSeparator {
+  display: none;
+}
+.css-qc6sy-singleValue {
+  color: $white !important;
+}
+.css-1pahdxg-control {
+  background-color: transparent !important;
+}
+.css-1pahdxg-control:hover {
+  background-color: transparent !important;
+  border-color: #404142 !important;
+  box-shadow: none !important;
+}
+
+// Record Tab Css starts here
+.record-tabs {
+  & .nav-item {
+    a.active {
+      background: transparent;
+      font-family: Rajdhani;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      border: none;
+      border-bottom: 5px solid #fe7a2b;
+      padding: 2px 0;
+      color: $white;
+    }
+    a {
+      background: transparent;
+      font-family: Rajdhani;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      border: none;
+      padding: 2px 0;
+      margin: 0 1rem;
+      color: #ffffff80;
+      text-transform: uppercase;
+    }
+  }
+  & .list-group-item {
+    font-family: Rajdhani;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 0;
+    background: transparent;
+    span {
+      width: 100px;
+      display: inline-block;
+      font-weight: bold;
+    }
+  }
+  .tab-pane {
+    background: #121515;
+  }
+  .card {
+    background: #121515;
+    border: none;
+    p {
+      font-family: Rajdhani;
+      font-style: normal;
+      font-size: 16px;
+      //  line-height: 1px;
+      font-weight: bold;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    hr {
+      height: 2px;
+      background: #212426;
+    }
+  }
+  .db-body {
+    p {
+      padding: 4px 13px;
+      border-radius: 5px;
+    }
+  }
+  .details-tab {
+    .list-group-item {
+      span {
+        min-width: 150px;
+      }
+    }
+  }
+  .inner-radius {
+    margin-left: -1.2rem;
+    margin-right: -1.2rem;
+    i {
+      width: 40px;
+      height: 40px;
+      // border: 1px solid #;
+      border-radius: 50%;
+      background-color: #000;
+    }
+    .bottom {
+      margin-top: -54px;
+      margin-bottom: -17px;
+      z-index: 1;
+      //  flex-basis: calc(20% - 10px);
+    }
+    .left {
+      //  align-self: flex-start;
+      margin-left: -20px;
+    }
+    .right {
+      //  align-self: flex-end;
+      margin-right: -20px;
+    }
+  }
+}

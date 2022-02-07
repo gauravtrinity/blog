@@ -1,0 +1,9 @@
+$theme-colors: (
+  'primary': #36115a,
+  'secondary': #f57931,
+  'info': #121515,
+  'border-form': #404142,
+);
+
+/* import bootstrap to set changes */
+@import '../../../node_modules/bootstrap/scss/bootstrap';

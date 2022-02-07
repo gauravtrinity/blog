@@ -1,0 +1,257 @@
+/**
+*
+* Testing
+*
+**/
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+* :focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+input:-ms-input-placeholder {
+  color: #fff !important;
+}
+
+input::-ms-input-placeholder {
+  color: #fff !important;
+}
+
+input::placeholder {
+  color: #fff !important;
+}
+
+body {
+  background: #121515;
+}
+
+* {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.min-vh-75 {
+  min-height: 75vh !important;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 350px;
+  padding: 15px;
+  margin: auto;
+  height: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.footer {
+  background: #101214;
+  /* Effect 3 */
+  -webkit-box-shadow: -10px -10px 20px rgba(72, 80, 99, 0.26), 10px 10px 20px #262c37;
+          box-shadow: -10px -10px 20px rgba(72, 80, 99, 0.26), 10px 10px 20px #262c37;
+}
+
+.footer .news-letter h5 {
+  font-weight: normal;
+  font-size: 18px;
+  font-family: Rajdhani;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+}
+
+.footer button {
+  height: 43px;
+  margin-left: -3px;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.view-record .image-container {
+  border-radius: 15px;
+  max-width: 350px;
+  margin-bottom: 20px;
+}
+
+.view-record .banner-text {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16.3%, rgba(12, 12, 12, 0)), color-stop(78.07%, rgba(0, 0, 0, 0.79937)), color-stop(82.95%, rgba(0, 0, 0, 0.799624)), color-stop(82.96%, rgba(0, 0, 0, 0.799645)), color-stop(82.96%, rgba(0, 0, 0, 0.8))), url(../images/mainbg.jpg);
+  background: linear-gradient(180deg, rgba(12, 12, 12, 0) 16.3%, rgba(0, 0, 0, 0.79937) 78.07%, rgba(0, 0, 0, 0.799624) 82.95%, rgba(0, 0, 0, 0.799645) 82.96%, rgba(0, 0, 0, 0.8) 82.96%), url(../images/mainbg.jpg);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+@media (min-width: 360px) and (max-width: 425px) {
+  .view-record .banner-text {
+    margin-bottom: -60px;
+  }
+}
+
+.view-record .record-tabs {
+  margin-top: -80px;
+}
+
+@media (min-width: 360px) and (max-width: 425px) {
+  .view-record .record-tabs {
+    margin-top: 0;
+  }
+}
+
+.view-record .record-tabs .db-list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rec-modal .modal-content {
+  background-color: #121515;
+}
+
+.rec-modal .modal-footer {
+  border: none;
+}
+
+.css-1s2u09g-control {
+  background-color: transparent !important;
+  border-color: #404142 !important;
+  color: #fff;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.css-1okebmr-indicatorSeparator {
+  display: none;
+}
+
+.css-qc6sy-singleValue {
+  color: #fff !important;
+}
+
+.css-1pahdxg-control {
+  background-color: transparent !important;
+}
+
+.css-1pahdxg-control:hover {
+  background-color: transparent !important;
+  border-color: #404142 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.record-tabs .nav-item a.active {
+  background: transparent;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  border-bottom: 5px solid #fe7a2b;
+  padding: 2px 0;
+  color: #fff;
+}
+
+.record-tabs .nav-item a {
+  background: transparent;
+  font-family: Rajdhani;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  padding: 2px 0;
+  margin: 0 1rem;
+  color: #ffffff80;
+  text-transform: uppercase;
+}
+
+.record-tabs .list-group-item {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 0;
+  background: transparent;
+}
+
+.record-tabs .list-group-item span {
+  width: 100px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.record-tabs .tab-pane {
+  background: #121515;
+}
+
+.record-tabs .card {
+  background: #121515;
+  border: none;
+}
+
+.record-tabs .card p {
+  font-family: Rajdhani;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.record-tabs .card hr {
+  height: 2px;
+  background: #212426;
+}
+
+.record-tabs .db-body p {
+  padding: 4px 13px;
+  border-radius: 5px;
+}
+
+.record-tabs .details-tab .list-group-item span {
+  min-width: 150px;
+}
+
+.record-tabs .inner-radius {
+  margin-left: -1.2rem;
+  margin-right: -1.2rem;
+}
+
+.record-tabs .inner-radius i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.record-tabs .inner-radius .bottom {
+  margin-top: -54px;
+  margin-bottom: -17px;
+  z-index: 1;
+}
+
+.record-tabs .inner-radius .left {
+  margin-left: -20px;
+}
+
+.record-tabs .inner-radius .right {
+  margin-right: -20px;
+}
+/*# sourceMappingURL=style.css.map */
